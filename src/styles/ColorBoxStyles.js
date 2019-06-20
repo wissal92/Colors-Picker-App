@@ -27,9 +27,13 @@ export default {
            height: props => (props.showingFullPalette ? '5%' : '10%')
       },
     },
+     colorName: {
+     color: props =>
+       chroma(props.background).luminance() <= 0.08 ? "white" : "black"
+    },
     copyText: {
         color: props => chroma(props.background).luminance() >= 0.7 ? 'black' : 'white',
-        colorName: props => chroma(props.background).luminance() <= 0.8 ? 'white' : 'black',
+        colorName: props => chroma(props.background).luminance() <= 0.08 ? 'white' : 'black',
       },
      seeMore: {
           color: props => chroma(props.background).luminance() >= 0.7 ? 'rgba(0,0,0,0.6)' : 'white',
