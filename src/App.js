@@ -92,8 +92,6 @@ class App extends Component {
         </CSSTransition>
       </TransitionGroup>
       )}/>
-
-      //<Palette palette={generatePalette(seedColors[4])}/>
     );
   }
 }

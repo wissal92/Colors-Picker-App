@@ -12,7 +12,6 @@ export default {
         }
     },
     root: {
-        backgroundColor: 'blue',
         height: '100vh',
         display: 'flex',
         alignItems: 'flex-start',
